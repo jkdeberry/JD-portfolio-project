@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../JDFinalSheCodes-Responsive-Week3-Homework/images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "JD-portfolio-project"
+	}
+}
