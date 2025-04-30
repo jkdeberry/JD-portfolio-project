@@ -87,7 +87,10 @@ p {
 }
 
 .content {
-  margin: 30px
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px;
+  text-align: center;
 }
 
 
