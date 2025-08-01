@@ -93,6 +93,16 @@ p {
   text-align: center;
 }
 
+a {
+  color: #6c63ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #4f48d7;
+  text-decoration: underline;
+}
 
 .btn-branding {
   background: var(--branding-color);
@@ -119,8 +129,78 @@ p {
   text-decoration: none;
 }
 
+.btn-branding,
+.btn-outline-primary {
+  background-color: #6c63ff;
+  color: #ffffff;
+  border: none;
+  padding: 8px 18px;
+  font-size: 14px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-outline-primary:hover,
+.btn-branding:hover {
+  background-color: #4f48d7;
+  color: #ffffff;
+}
+
+.project {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  transition: box-shadow 0.3s ease;
+}
+
+.project:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.project h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.project p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.project a.btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
 .project-description {
-  padding: 120px 60px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-left: 4px solid #0077cc;
+  border-radius: 8px;
+}
+
+.project-description h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.project-description p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.project-description a.btn {
+  margin-top: 10px;
 }
 
 .logo {
