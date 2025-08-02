@@ -1,210 +1,83 @@
+/* ========== VARIABLES ==========
+   Define color palette and fonts
+================================ */
 :root {
   --branding-color: #6c63ff;
+  --branding-color-dark: #4f48d7;
+  --secondary-color: #f9f7fe;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
-  --secondary-color: #F9F7FE;
 }
 
+/* ========== GLOBAL ========== */
 body {
   font-family: var(--default-font-family);
+  line-height: 1.6;
+  color: #333;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: black;
   font-family: var(--heading-font-family);
   font-weight: bold;
+  color: black;
+  margin-bottom: 1rem;
 }
 
 h1 {
   font-size: 96px;
-  line-height: 1.5;
 }
 
 h2 {
   font-size: 64px;
 }
 
-h4 {
-  font-size: 48px;
+h3 {
+  font-size: 30px;
+  text-align: center;
+  font-family: var(--default-font-family);
 }
 
 p {
-  font-weight: normal;
   font-size: 16px;
-  line-height: 30px;
+  margin-bottom: 1rem;
 }
 
+.content h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ========== HERO SECTION ========== */
 .hero {
-  background: var(--secondary-color);
+  background-color: var(--secondary-color);
   text-align: center;
   padding: 80px 20px;
 }
 
 .hero p {
   font-size: 36px;
-  font-weight: bold;
-  Margin: 0;
+  margin: 0;
   color: #272142;
 }
 
 .hero h2 {
-  font-family: var(--heading-font-family);
   font-size: 24px;
   font-weight: normal;
-  line-height: 1.5;
 }
 
-.content-container {
-  padding: 60px 20px;
-}
-
-.content h1 {
-  font-size: 64px;
-  line-height: 80px;
-}
-
-.content h2 {
-  font-family: var(--default-font-family);
-  font-size: 18px;
-
-}
-
-.content h3 {
-  font-family: var(--default-font-family);
-  font-size: 30px;
-  line-height: 1.5;
-  text-align: center;
-}
-
-.content p {
-  font-size: 14px;
-}
-
-.content a {
-  font-family: var(--default-font-family);
-  margin: auto;
-  font-size: 26px;
-}
-
-.content {
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 30px;
-  text-align: center;
-}
-
-a {
-  color: #6c63ff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #4f48d7;
-  text-decoration: underline;
-}
-
-.btn-branding {
-  background: var(--branding-color);
-  border-radius: 4px;
-  color: white;
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
-}
-
-.btn-branding-outline {
+/* ========== NAVBAR ========== */
+.navbar-brand {
+  font-weight: 600;
+  font-size: 20px;
   color: var(--branding-color);
-  border: 1px solid var(--branding-color);
-  border-radius: 4px;
-  font-size: 18px;
-  line-height: 18px;
-  padding: 15px 30px;
-}
-
-.btn-branding:hover {
-  background: var(--branding-color);
-  color: black;
-  opacity: 0.9;
   text-decoration: none;
 }
 
-.btn-branding,
-.btn-outline-primary {
-  background-color: #6c63ff;
-  color: #ffffff;
-  border: none;
-  padding: 8px 18px;
-  font-size: 14px;
-  border-radius: 6px;
-  transition: background-color 0.3s ease;
-  text-decoration: none;
-}
-
-.btn-outline-primary:hover,
-.btn-branding:hover {
-  background-color: #4f48d7;
-  color: #ffffff;
-}
-
-.project {
-  background-color: #f9f9f9;
-  padding: 30px;
-  border-radius: 10px;
-  border: 1px solid #e0e0e0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
-  transition: box-shadow 0.3s ease;
-}
-
-.project:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-}
-
-.project h3 {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  font-family: "Poppins", sans-serif;
-}
-
-.project p {
-  font-size: 14px;
-  color: #444;
-  line-height: 1.6;
-}
-
-.project a.btn {
-  padding: 8px 16px;
-  font-size: 14px;
-  border-radius: 6px;
-}
-
-.project-description {
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-left: 4px solid #0077cc;
-  border-radius: 8px;
-}
-
-.project-description h3 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.project-description p {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #555;
-}
-
-.project-description a.btn {
-  margin-top: 10px;
-}
-
-.logo {
-  max-height: 80px;
+.navbar-brand:hover {
+  color: var(--branding-color-dark);
 }
 
 nav {
@@ -218,41 +91,126 @@ nav ul {
 
 nav li {
   display: inline;
+  margin-left: 15px;
   list-style: none;
   line-height: 90px;
-  margin-left: 15px;
 }
 
 nav a {
+  color: #272142;
   text-decoration: none;
-  color:#272142;
   transition: all 150ms ease-in-out;
 }
 
 nav a:hover,
-nav li.active a  {
+nav li.active a {
   color: var(--branding-color);
 }
 
-.social-links a {
-  margin: 0 10px;
-  font-size: 20px;
-  color: #6c63ff;
+/* ========== LINKS ========== */
+a {
+  color: var(--branding-color);
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.social-links a:hover {
-  color: #4f48d7;
+a:hover {
+  color: var(--branding-color-dark);
+  text-decoration: underline;
 }
 
-.email-link {
-  font-size: 14px;
-  color: #6c63ff;
+/* ========== BUTTONS ========== */
+.btn-branding,
+.btn-outline-primary {
+  background-color: var(--branding-color);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
   text-decoration: none;
 }
 
-.email-link i {
-  margin-right: 5px;
+.btn-outline-primary {
+  background-color: transparent;
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+}
+
+.btn-branding:hover,
+.btn-outline-primary:hover {
+  background-color: var(--branding-color-dark);
+  color: white;
+}
+
+.small-button {
+  font-size: 14px;
+  padding: 10px 18px;
+  border-radius: 6px;
+}
+
+/* ========== PROJECTS ========== */
+.preview-heading {
+  font-size: 40px;
+  font-weight: 400;
+  color: #333;
+  margin-top: 40px;
+}
+
+.project,
+.project-description {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px; 
+}
+
+.project:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.project h3,
+.project-description h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: var(--default-font-family);
+}
+
+.project p,
+.project-description p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.project a.btn {
+  margin-top: 10px;
+}
+
+.project-description {
+  border-left: 4px solid var(--branding-color);
+}
+
+.project-description a.btn {
+  margin-top: 10px;
+}
+
+/* ========== IMAGE UTILS ========== */
+.logo {
+  max-height: 80px;
+}
+
+.about-photo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 .icon {
@@ -262,34 +220,45 @@ nav li.active a  {
   vertical-align: middle;
 }
 
+/* ========== SOCIAL & CONTACT ========== */
+.social-links a {
+  margin: 0 10px;
+  font-size: 20px;
+  color: var(--branding-color);
+  transition: color 0.3s ease;
+}
 
+.social-links a:hover {
+  color: var(--branding-color-dark);
+}
+
+.email-link {
+  font-size: 14px;
+  color: var(--branding-color);
+  text-decoration: none;
+}
+
+.email-link i {
+  margin-right: 5px;
+}
+
+/* ========== FOOTER ========== */
 footer {
   margin: 60px 0;
 }
 
 footer .contact-box {
-  background: var(--secondary-color);
+  background-color: var(--secondary-color);
   padding: 30px 120px;
-  border-radius: 10px;  
+  border-radius: 10px;
 }
 
 footer .contact-box p {
   margin: 0;
 }
 
-footer .email-link {
-  text-decoration: none;
-  color: black;
-  font-size: 24px;
- 
-}
-footer .email-link:hover {
-  color: var(--branding-color);
-}
-
 footer .social-links a {
   margin: 0 20px;
-  color: var(--branding-color);
   background: var(--secondary-color);
   padding: 10px 14px;
   font-size: 18px;
@@ -302,10 +271,10 @@ footer .social-links a:hover {
   background: var(--branding-color);
 }
 
+/* ========== RESPONSIVE ========== */
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
-    line-height: 1.5; 
   }
 
   h2 {
@@ -320,9 +289,14 @@ footer .social-links a:hover {
     text-align: center;
     padding: 0;
   }
-  
+
+.content h1 {
+    font-size: 32px;
+  }
+
+
   .project-description {
     padding: 0;
     text-align: center;
-  } 
-}
+  }
+} 
