@@ -294,9 +294,22 @@ footer .social-links a:hover {
     font-size: 32px;
   }
 
-
   .project-description {
     padding: 0;
     text-align: center;
+  }
+
+  .project-image {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  }
+  
+  @media (max-width: 576px) {
+  .project-image {
+    height: 180px;
+  }
   }
 } 
