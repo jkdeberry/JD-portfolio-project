@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   color: black;
   margin-bottom: 1rem;
-}
+}index ad 
 
 h1 {
   font-size: 96px;
@@ -54,7 +54,11 @@ p {
 .hero {
   background-color: var(--secondary-color);
   text-align: center;
-  padding: 80px 20px;
+  min-height: 300px; /* shorter banner height */
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero p {
